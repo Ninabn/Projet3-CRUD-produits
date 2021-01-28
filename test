@@ -1,0 +1,34 @@
+Table de produit lier php
+
+<table class="table table-striped ">
+<tr>
+      <th scope="row"><?php echo $row['nom_produit'] ?></th>
+      <td><img src="<?= $row['image_produit'] ?>" alt="<?= $row['nom_produit'] ?>" title="<?= $row['nom_produit'] ?>" /></td>
+      <td><?php echo $row['description_produit'] ?></td>
+      <td><?php echo $row['prix_produit'] ?> €</td>
+      
+      <form action="delete.php" method="POST">
+      <td><button type="submit" class="btn btn-danger" name="delete" value="<?php $accid = $row["id_produit"]; var_dump($accid) ?>">Supprimer <?php var_dump($accid)?> </button></td>
+      </form>
+
+      <form action="majProduit.php" method="POST">
+      <td><button type="button" class="btn btn-info" name="maj">Détails</button></td>
+      </form>
+
+      <td><button type="button" class="btn btn-secondary">Editer</button></td>
+      
+    </tr>
+</table>
+
+
+
+BOUTON 
+
+  <!-- <form action="delete.php" method="POST">
+                <td><button type="submit" class="btn btn-danger" name="id_produit" value="<?php $accid = $row["id_produit"]?>">Supprimer<?php var_dump($accid) ?> </button></td>
+            </form> -->
+
+
+<form action="editProduit.php" method="GET">
+                <td><a type="submit" name="maj" href="majProduit.php" value ="<?= $row["id_produit"]?>" class="btn btn-warning">Editer</a></td>
+            </form>

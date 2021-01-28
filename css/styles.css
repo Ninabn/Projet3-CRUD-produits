@@ -1,0 +1,12 @@
+body {
+    font-family: 'Poppins', Courier, monospace;
+    background-color: azure;
+}
+
+#size {
+    font-size: small;
+}
+
+#user_form {
+    width: 50%;
+}
