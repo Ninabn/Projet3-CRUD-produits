@@ -4,7 +4,7 @@ ob_start();
 
 $id = $_GET['id_produit'];
 
-var_dump($id);
+//var_dump($id);
 
 try{
     $user = "root";
@@ -18,7 +18,7 @@ $sql = "DELETE FROM produits WHERE id_produit = $id";
 
 // use exec() because no results are returned
 $bdd->exec($sql);
-echo "Record deleted successfully";
+echo "Produit supprimer";
 } catch(PDOException $e) {
 echo $sql . "<br>" . $e->getMessage();
 }

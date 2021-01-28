@@ -32,7 +32,7 @@ VALUES (NULL, '', '', '', '')";
 
   <div class="mb-3">
     <label class="form-label">Description</label>
-    <input type="text" class="form-control" name="description_produit" required>
+    <textarea rows="4" type="text" class="form-control" name="description_produit" required></textarea>
   </div>
 
   <div class="mb-3">
@@ -46,6 +46,7 @@ VALUES (NULL, '', '', '', '')";
   </div>
   
   <button type="submit" class="btn btn-primary">Ajouter l'article</button>
+  <a href="listeProduit.php"><button type="button" class="btn btn-info">Retour</button></a>
 </form>
 
 
