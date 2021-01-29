@@ -1,5 +1,5 @@
 <?php
-$title = "Produits";
+$title = "Produit supprimer";
 ob_start();
 
 $id = $_GET['id_produit'];

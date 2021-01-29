@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 $title = "Produits";
 ob_start();
 try{
@@ -14,7 +15,8 @@ try{
 }
 
 //Titre de la page et bouton create
-echo'<h1 class="text-center">Produits mis en ventes</h1>';
+echo'<h1 class="text-center">Produits mis en ventes par : ' .$_SESSION['name']. '</h1>';
+
 echo '<a href="ajouteProduit.php"> <button type="button" class="btn btn-success m-4">Ajouter un article</button></a>';
 
 $req = "SELECT * FROM produits";

@@ -1,5 +1,5 @@
 <?php
-$title = "Produits";
+$title = "Details du produits";
 ob_start();
 ?>
 
